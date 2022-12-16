@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="browser" value="chrome"/>
-  <listeners>
-    <listener class-name="com.hrm.genericUtility.ListnersImplimentation"/>
-    <listener class-name="com.hrm.genericUtility.RetryTransformer"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.practice.FetchproductPrice">
+      <class name="com.hrm.hrHead.HrHeadAddEmployee_Test">
         <methods>
-          <include name="fetchPriceAmazon"/>
+          <include name="loginActions"/>
+          <include name="launchBrowser"/>
+          <include name="HrHeadEmployeeTest"/>
+          <include name="closeApplcation"/>
         </methods>
-      </class> <!-- org.practice.FetchproductPrice -->
+      </class> <!-- com.hrm.hrHead.HrHeadAddEmployee_Test -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

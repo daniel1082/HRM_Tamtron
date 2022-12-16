@@ -46,9 +46,9 @@ public class HrHeadEmployeePage {
 				System.out.println(actualname+" is searched ");
 				System.out.println("Expected name is present");
 			}
-			else {
-				System.out.println(actualname+"is not present in employee list");
-			}
+//			else {
+//				System.out.println(actualname+"is not present in employee list");
+//			}
 		}
 	}
 
