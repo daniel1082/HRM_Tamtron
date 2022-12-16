@@ -94,7 +94,6 @@ public class BaseClass {
 
 		driver.quit();
 		System.out.println("browser Closed sucessefully");
-		sa.assertAll();
 
 	}
 }
