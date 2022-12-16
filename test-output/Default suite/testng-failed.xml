@@ -3,14 +3,29 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="com.hrm.hrHead.HrHeadAddEmployee_Test">
+=======
+      <class name="com.hrm.hrHead.AddBranches_Test">
+>>>>>>> branch 'master' of https://github.com/daniel1082/HRM_Tamtron.git
         <methods>
+<<<<<<< HEAD
           <include name="loginActions"/>
           <include name="launchBrowser"/>
           <include name="HrHeadEmployeeTest"/>
+=======
+          <include name="addBranchesTest"/>
+          <include name="loginActions"/>
+          <include name="launchBrowser"/>
+          <include name="logoutActionfromApp"/>
+>>>>>>> branch 'master' of https://github.com/daniel1082/HRM_Tamtron.git
           <include name="closeApplcation"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- com.hrm.hrHead.HrHeadAddEmployee_Test -->
+=======
+      </class> <!-- com.hrm.hrHead.AddBranches_Test -->
+>>>>>>> branch 'master' of https://github.com/daniel1082/HRM_Tamtron.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
