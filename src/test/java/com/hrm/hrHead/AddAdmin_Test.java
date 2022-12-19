@@ -13,6 +13,7 @@ public class AddAdmin_Test extends BaseClass{
 	
 	@Test
 	public void addAdminTest() throws EncryptedDocumentException, IOException {
+		//updated the script
 		webdriver.acceptAlert();
 		
 		compg.clickAdmin();

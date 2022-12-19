@@ -6,6 +6,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.asserts.SoftAssert;
 
 import com.hrm.pomRepository.AdminPage;
 import com.hrm.pomRepository.AddAdminPage;
@@ -39,13 +40,13 @@ public class BaseClass {
 	protected AddBranchesPage addBranchesPage;
 	protected AddCorporatePage addCorporatePage;
 	protected CorporatePage corpPg;
-<<<<<<< HEAD
+
 	protected AdminPage adminPage;
 	protected AddAdminPage addAdminPage;
 	protected SoftAssert sa;
-=======
+
 	protected HrHeadEmployeePage hrheademp;
->>>>>>> branch 'master' of https://github.com/daniel1082/HRM_Tamtron.git
+
 
 	@BeforeClass
 	public void launchBrowser() {
@@ -72,13 +73,13 @@ public class BaseClass {
 		addBranchesPage = new AddBranchesPage(driver);
 		addCorporatePage = new AddCorporatePage(driver);
 		corpPg = new CorporatePage(driver);
-<<<<<<< HEAD
+
 		adminPage=new AdminPage(driver);
 		addAdminPage=new AddAdminPage(driver);
 		
-=======
+
 		hrheademp=new HrHeadEmployeePage(driver);
->>>>>>> branch 'master' of https://github.com/daniel1082/HRM_Tamtron.git
+
 	}
 
 	@BeforeMethod
@@ -89,15 +90,15 @@ public class BaseClass {
 //		String password = prop.getPropertyData(IConstantPath.PROPERTY_FILE_PATH,
 //				PropertyFileKeys.PASSWORDOFFICER.convertToString());
 
-<<<<<<< HEAD
+
 		String username = prop.getPropertyData(IConstantPath.PROPERTY_FILE_PATH, PropertyFileKeys.USERNAME.convertToString());
 		String password = prop.getPropertyData(IConstantPath.PROPERTY_FILE_PATH, PropertyFileKeys.PASSWORD.convertToString());
-=======
-		String username = prop.getPropertyData(IConstantPath.PROPERTY_FILE_PATH,
-				PropertyFileKeys.USERNAME.convertToString());
-		String password = prop.getPropertyData(IConstantPath.PROPERTY_FILE_PATH,
-				PropertyFileKeys.PASSWORD.convertToString());
->>>>>>> branch 'master' of https://github.com/daniel1082/HRM_Tamtron.git
+
+//		String username = prop.getPropertyData(IConstantPath.PROPERTY_FILE_PATH,
+//				PropertyFileKeys.USERNAME.convertToString());
+//		String password = prop.getPropertyData(IConstantPath.PROPERTY_FILE_PATH,
+//				PropertyFileKeys.PASSWORD.convertToString());
+
 		login.loginAction(username, password);
 		WebElement ele = login.selectDropdown();
 		webdriver.handleDropdown(ele, 1);
