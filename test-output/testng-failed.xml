@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.hrm.hrHead.AddAdmin_Test">
+      <class name="com.hrm.hrHead.AddBranches_Test">
         <methods>
+          <include name="addBranchesTest"/>
           <include name="loginActions"/>
           <include name="launchBrowser"/>
-          <include name="addAdminTest"/>
           <include name="logoutActionfromApp"/>
           <include name="closeApplcation"/>
         </methods>
-      </class> <!-- com.hrm.hrHead.AddAdmin_Test -->
+      </class> <!-- com.hrm.hrHead.AddBranches_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

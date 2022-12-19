@@ -92,6 +92,7 @@ public class BaseClass {
 
 	@AfterMethod(alwaysRun = true)
 	public void logoutActionfromApp() {
+
 		compg.logoutAction();
 
 	}
