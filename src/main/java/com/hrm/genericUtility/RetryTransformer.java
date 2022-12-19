@@ -19,5 +19,4 @@ public class RetryTransformer implements IAnnotationTransformer {
 		IAnnotationTransformer.super.transform(annotation, testClass, testConstructor, testMethod);
 		annotation.setRetryAnalyzer(com.hrm.genericUtility.RetryAnalyserimplimentation.class);
 	}
-
 }

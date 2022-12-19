@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+=======
+<<<<<<< HEAD
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+=======
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+>>>>>>> branch 'master' of https://github.com/daniel1082/HRM_Tamtron.git
+>>>>>>> branch 'master' of https://github.com/daniel1082/HRM_Tamtron.git
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2022-12-19T10:28:38 IST" name="Default suite" finished-at="2022-12-19T10:28:41 IST" duration-ms="2801">
+=======
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="5986" started-at="2022-12-16T10:44:08 IST" finished-at="2022-12-16T10:44:14 IST">
+=======
+  <suite started-at="2022-12-16T09:39:57 IST" name="Default suite" finished-at="2022-12-16T09:40:05 IST" duration-ms="7403">
+>>>>>>> branch 'master' of https://github.com/daniel1082/HRM_Tamtron.git
+>>>>>>> branch 'master' of https://github.com/daniel1082/HRM_Tamtron.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2022-12-19T10:28:38 IST" name="Default test" finished-at="2022-12-19T10:28:41 IST" duration-ms="2801">
       <class name="com.hrm.hrHead.AddBranches_Test">
         <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.hrm.hrHead.AddBranches_Test@5562c41e]" started-at="2022-12-19T10:28:38 IST" name="launchBrowser" finished-at="2022-12-19T10:28:41 IST" duration-ms="2683" status="FAIL">
@@ -219,14 +236,68 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
+=======
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="5986" started-at="2022-12-16T10:44:08 IST" finished-at="2022-12-16T10:44:14 IST">
+      <class name="com.hrm.hrHead.HrHeadAddEmployee_Test">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.hrm.hrHead.HrHeadAddEmployee_Test@eafc191]" name="launchBrowser" is-config="true" duration-ms="2820" started-at="2022-12-16T10:44:08 IST" finished-at="2022-12-16T10:44:11 IST">
+=======
+    <test started-at="2022-12-16T09:39:57 IST" name="Default test" finished-at="2022-12-16T09:40:05 IST" duration-ms="7403">
+      <class name="com.hrm.hrOfficer.HrOfficerAddEmployee">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.hrm.hrOfficer.HrOfficerAddEmployee@56cdfb3b]" started-at="2022-12-16T09:39:57 IST" name="launchBrowser" finished-at="2022-12-16T09:40:00 IST" duration-ms="2158" status="PASS">
+>>>>>>> branch 'master' of https://github.com/daniel1082/HRM_Tamtron.git
+>>>>>>> branch 'master' of https://github.com/daniel1082/HRM_Tamtron.git
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- logoutActionfromApp -->
+        <test-method is-config="true" signature="closeApplcation()[pri:0, instance:com.hrm.hrHead.AddBranches_Test@5562c41e]" started-at="2022-12-19T10:28:41 IST" name="closeApplcation" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1671425921128" status="SKIP">
+=======
+        </test-method> <!-- launchBrowser -->
+<<<<<<< HEAD
+        <test-method status="PASS" signature="loginActions()[pri:0, instance:com.hrm.hrHead.HrHeadAddEmployee_Test@eafc191]" name="loginActions" is-config="true" duration-ms="681" started-at="2022-12-16T10:44:11 IST" finished-at="2022-12-16T10:44:12 IST">
+=======
+        <test-method is-config="true" signature="loginActions()[pri:0, instance:com.hrm.hrOfficer.HrOfficerAddEmployee@56cdfb3b]" started-at="2022-12-16T09:40:00 IST" name="loginActions" finished-at="2022-12-16T09:40:00 IST" duration-ms="873" status="PASS">
+>>>>>>> branch 'master' of https://github.com/daniel1082/HRM_Tamtron.git
+>>>>>>> branch 'master' of https://github.com/daniel1082/HRM_Tamtron.git
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- closeApplcation -->
+      </class> <!-- com.hrm.hrHead.AddBranches_Test -->
+=======
+        </test-method> <!-- loginActions -->
+<<<<<<< HEAD
+        <test-method status="PASS" signature="HrHeadEmployeeTest()[pri:0, instance:com.hrm.hrHead.HrHeadAddEmployee_Test@eafc191]" name="HrHeadEmployeeTest" duration-ms="1652" started-at="2022-12-16T10:44:12 IST" finished-at="2022-12-16T10:44:14 IST">
+=======
+        <test-method signature="addEmplyeeTest()[pri:0, instance:com.hrm.hrOfficer.HrOfficerAddEmployee@56cdfb3b]" started-at="2022-12-16T09:40:00 IST" name="addEmplyeeTest" finished-at="2022-12-16T09:40:04 IST" duration-ms="3282" status="PASS">
+>>>>>>> branch 'master' of https://github.com/daniel1082/HRM_Tamtron.git
+          <reporter-output>
+          </reporter-output>
+<<<<<<< HEAD
+        </test-method> <!-- HrHeadEmployeeTest -->
+        <test-method status="PASS" signature="logoutActionfromApp()[pri:0, instance:com.hrm.hrHead.HrHeadAddEmployee_Test@eafc191]" name="logoutActionfromApp" is-config="true" duration-ms="146" started-at="2022-12-16T10:44:14 IST" finished-at="2022-12-16T10:44:14 IST">
+=======
+        </test-method> <!-- addEmplyeeTest -->
+        <test-method is-config="true" signature="logoutActionfromApp()[pri:0, instance:com.hrm.hrOfficer.HrOfficerAddEmployee@56cdfb3b]" started-at="2022-12-16T09:40:04 IST" name="logoutActionfromApp" finished-at="2022-12-16T09:40:04 IST" duration-ms="610" status="PASS">
+>>>>>>> branch 'master' of https://github.com/daniel1082/HRM_Tamtron.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutActionfromApp -->
-        <test-method is-config="true" signature="closeApplcation()[pri:0, instance:com.hrm.hrHead.AddBranches_Test@5562c41e]" started-at="2022-12-19T10:28:41 IST" name="closeApplcation" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1671425921128" status="SKIP">
+<<<<<<< HEAD
+        <test-method status="PASS" signature="closeApplcation()[pri:0, instance:com.hrm.hrHead.HrHeadAddEmployee_Test@eafc191]" name="closeApplcation" is-config="true" duration-ms="657" started-at="2022-12-16T10:44:14 IST" finished-at="2022-12-16T10:44:14 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplcation -->
-      </class> <!-- com.hrm.hrHead.AddBranches_Test -->
+      </class> <!-- com.hrm.hrHead.HrHeadAddEmployee_Test -->
+=======
+        <test-method is-config="true" signature="closeApplcation()[pri:0, instance:com.hrm.hrOfficer.HrOfficerAddEmployee@56cdfb3b]" started-at="2022-12-16T09:40:04 IST" name="closeApplcation" finished-at="2022-12-16T09:40:05 IST" duration-ms="184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplcation -->
+      </class> <!-- com.hrm.hrOfficer.HrOfficerAddEmployee -->
+>>>>>>> branch 'master' of https://github.com/daniel1082/HRM_Tamtron.git
+>>>>>>> branch 'master' of https://github.com/daniel1082/HRM_Tamtron.git
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

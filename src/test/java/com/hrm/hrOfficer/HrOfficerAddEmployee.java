@@ -5,7 +5,6 @@ import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -74,17 +73,7 @@ public class HrOfficerAddEmployee extends BaseClass {
 				img.sendKeys(imgpath);
 				empdetail.submit();
 				webdriver.acceptAlert();
-				Assert.fail();
 				
-//				
-//				compg.logOut();
-				
-				
-			//empdetail.creatEmployee(compId, firstName, lastName, middleName, branchDt, branchRecentDt, 2, 2,
-			//			empPosition, contact, empSSS, empTin, pageBig, empgsis, hrmFile, hrmImage);, 2, 2, empPosition, contact, empSSS, empTin, pageBig, empgsis, hrmFile, hrmImage
-		
-
-			//webdriver.acceptAlert(driver);
 	}
 
 }

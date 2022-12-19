@@ -3,63 +3,33 @@ package com.hrm.hrHead;
 
 import java.io.IOException;
 
-import org.openqa.selenium.WebDriver;
+import org.apache.poi.EncryptedDocumentException;
+import org.testng.annotations.Test;
 
-import com.hrm.genericUtility.ExcelLibrary;
+import com.hrm.genericUtility.BaseClass;
 import com.hrm.genericUtility.IConstantPath;
-import com.hrm.genericUtility.PropertyFileKeys;
-import com.hrm.genericUtility.PropertyLibrary;
 import com.hrm.genericUtility.SheetName;
-import com.hrm.genericUtility.WebDriverUtility;
-import com.hrm.pomRepository.CommonPage;
-import com.hrm.pomRepository.HrHeadEmployeePage;
-import com.hrm.pomRepository.LoginPageR;
 
 /**
  * This class is used to create new employee details
  * @author daniel
  *
  */
-public class HrHeadAddEmployee_Test {
-	
-	public static void main(String[] args) throws IOException {
+public class HrHeadAddEmployee_Test extends BaseClass {
+	@Test
+	public void HrHeadEmployeeTest() throws EncryptedDocumentException, IOException {
+		
+		
 		// creating object for generic
-		ExcelLibrary ExcelLibrary=new ExcelLibrary();
-		PropertyLibrary PropertyLibrary=new PropertyLibrary();
-		WebDriverUtility WebDriverUtility=new WebDriverUtility();
+		String emp = excel.getExcelData(IConstantPath.EXCEL_PATH, SheetName.HRHeadEmployee.toString(), 2, 1);
 
-		// loading property file
-		String browser = PropertyLibrary.getPropertyData(IConstantPath.PROPERTY_FILE_PATH,
-				PropertyFileKeys.BROWSER.convertToString());
-		String url = PropertyLibrary.getPropertyData(IConstantPath.PROPERTY_FILE_PATH,
-				PropertyFileKeys.URL.convertToString());
-		String password = PropertyLibrary.getPropertyData(IConstantPath.PROPERTY_FILE_PATH,
-				PropertyFileKeys.PASSWORD.convertToString());
-		String emp = PropertyLibrary.getPropertyData(IConstantPath.PROPERTY_FILE_PATH,
-				PropertyFileKeys.EMPLOYEENAME.convertToString());
-
-		// fetching data from excel
-		String username = ExcelLibrary.sfetchValidTestData(IConstantPath.EXCEL_PATH.toString(),
-				SheetName.HRHeadEmployee.toString(), 1, "HrHeadAddEmployee", "UserName");
-
-		// make browser generic launch the browser
-		WebDriver driver = WebDriverUtility.launchAppliction(browser, 10, url);
-		// creating object for object repository
-		
-		
-		
-		LoginPageR loginpage =new LoginPageR(driver);
-		HrHeadEmployeePage hrheademp = new HrHeadEmployeePage(driver);
-		CommonPage commonpage = new CommonPage(driver);
-		loginpage.loginAction(username, password);
-		WebDriverUtility.acceptAlert();
-		commonpage.clickempbutton();
-		commonpage.clickaddempbutton();
+		webdriver.acceptAlert();
+		compg.clickempbutton();
+		compg.clickaddempbutton();
 		hrheademp.searchEmployee(emp);
 		hrheademp.validate(emp);
-		driver.quit();
-		System.out.println("test script executed succeffully");
-		ExcelLibrary.sinsertDataToExcel(2, 3, IConstantPath.EXCEL_PATH.toString(), SheetName.HRHeadEmployee.toString(), "pass");
+		excel.sinsertDataToExcel(2, 3, IConstantPath.EXCEL_PATH.toString(), SheetName.HRHeadEmployee.toString(),
+				"pass");
 	}
 	
 }
