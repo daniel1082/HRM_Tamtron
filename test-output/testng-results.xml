@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="25491" started-at="2022-12-16T17:28:50 IST" finished-at="2022-12-16T17:29:15 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="25491" started-at="2022-12-16T17:28:50 IST" finished-at="2022-12-16T17:29:15 IST">
+      <class name="com.hrm.hrAssistant.SearchDepartmentOfEmploee">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.hrm.hrAssistant.SearchDepartmentOfEmploee@612679d6]" name="launchBrowser" is-config="true" duration-ms="18386" started-at="2022-12-16T17:28:50 IST" finished-at="2022-12-16T17:29:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="loginActions()[pri:0, instance:com.hrm.hrAssistant.SearchDepartmentOfEmploee@612679d6]" name="loginActions" is-config="true" duration-ms="767" started-at="2022-12-16T17:29:09 IST" finished-at="2022-12-16T17:29:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginActions -->
+        <test-method status="PASS" signature="searchDepartEmp()[pri:0, instance:com.hrm.hrAssistant.SearchDepartmentOfEmploee@612679d6]" name="searchDepartEmp" duration-ms="4621" started-at="2022-12-16T17:29:10 IST" finished-at="2022-12-16T17:29:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchDepartEmp -->
+        <test-method status="PASS" signature="logoutActionfromApp()[pri:0, instance:com.hrm.hrAssistant.SearchDepartmentOfEmploee@612679d6]" name="logoutActionfromApp" is-config="true" duration-ms="296" started-at="2022-12-16T17:29:14 IST" finished-at="2022-12-16T17:29:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutActionfromApp -->
+        <test-method status="PASS" signature="closeApplcation()[pri:0, instance:com.hrm.hrAssistant.SearchDepartmentOfEmploee@612679d6]" name="closeApplcation" is-config="true" duration-ms="900" started-at="2022-12-16T17:29:15 IST" finished-at="2022-12-16T17:29:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplcation -->
+      </class> <!-- com.hrm.hrAssistant.SearchDepartmentOfEmploee -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
