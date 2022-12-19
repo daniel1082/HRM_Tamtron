@@ -43,7 +43,8 @@ public class HrOfficerAddEmployee extends BaseClass {
 
 			// Fetching data from excel file
 			String firstName = excel.fetchValidTestData(IConstantPath.EXCEL_PATH.toString(),
-					SheetName.EMPLOYEEDETAILS.toString(), 1,"CreateEmployeeTest", "FirstName");
+					SheetName.EMPLOYEEDETAILS.toString(), 1,
+					"CreateEmployeeTest", "FirstName");
 			String empPosition = excel.fetchTestData(IConstantPath.EXCEL_PATH,
 					SheetName.EMPLOYEECONTACT.toString(), 2, 1);
 			String contact = excel.fetchTestData(IConstantPath.EXCEL_PATH, SheetName.EMPLOYEECONTACT.toString(),2, 2);

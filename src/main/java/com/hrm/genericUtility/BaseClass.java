@@ -8,6 +8,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.asserts.SoftAssert;
 
+import com.hrm.pomRepository.AdminPage;
+import com.hrm.pomRepository.AddAdminPage;
 import com.hrm.pomRepository.AddBranchesPage;
 import com.hrm.pomRepository.AddCorporatePage;
 import com.hrm.pomRepository.BranchesPage;
@@ -37,6 +39,8 @@ public class BaseClass {
 	protected AddBranchesPage addBranchesPage;
 	protected AddCorporatePage addCorporatePage;
 	protected CorporatePage corpPg;
+	protected AdminPage adminPage;
+	protected AddAdminPage addAdminPage;
 	protected SoftAssert sa;
 
 	@BeforeClass
@@ -65,21 +69,24 @@ public class BaseClass {
 		addBranchesPage = new AddBranchesPage(driver);
 		addCorporatePage = new AddCorporatePage(driver);
 		corpPg = new CorporatePage(driver);
+		adminPage=new AdminPage(driver);
+		addAdminPage=new AddAdminPage(driver);
+		
 	}
 
 	@BeforeMethod
 	public void loginActions() {
 
-		String username = prop.getPropertyData(IConstantPath.PROPERTY_FILE_PATH,
-				PropertyFileKeys.USERNAMEOFFICER.convertToString());
-		String password = prop.getPropertyData(IConstantPath.PROPERTY_FILE_PATH,
-				PropertyFileKeys.PASSWORDOFFICER.convertToString());
+//		String username = prop.getPropertyData(IConstantPath.PROPERTY_FILE_PATH,
+//				PropertyFileKeys.USERNAMEOFFICER.convertToString());
+//		String password = prop.getPropertyData(IConstantPath.PROPERTY_FILE_PATH,
+//				PropertyFileKeys.PASSWORDOFFICER.convertToString());
 
-//		String username = prop.getPropertyData(IConstantPath.PROPERTY_FILE_PATH, PropertyFileKeys.USERNAME.convertToString());
-//		String password = prop.getPropertyData(IConstantPath.PROPERTY_FILE_PATH, PropertyFileKeys.PASSWORD.convertToString());
+		String username = prop.getPropertyData(IConstantPath.PROPERTY_FILE_PATH, PropertyFileKeys.USERNAME.convertToString());
+		String password = prop.getPropertyData(IConstantPath.PROPERTY_FILE_PATH, PropertyFileKeys.PASSWORD.convertToString());
 		login.loginAction(username, password);
 		WebElement ele = login.selectDropdown();
-		webdriver.handleDropdown(ele, 2);
+		webdriver.handleDropdown(ele, 1);
 		login.submitclick().click();
 	}
 

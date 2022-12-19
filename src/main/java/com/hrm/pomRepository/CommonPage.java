@@ -46,15 +46,24 @@ public class CommonPage extends BaseClass {
 	private WebElement addEmpRadio;
 	@FindBy (xpath="//h1[text() ='Dashboard']/ancestor::div[@class='content-header']/following-sibling::section[@class='content']/descendant::button[@class='btn btn-primary'][1]")
 	private WebElement addEmpButton;
-
+	
+	//ADMIN MODULE
+	@FindBy (xpath="//p[contains(text(),'ADMIN')]")
+	private WebElement admin;
+	@FindBy(xpath="//p[contains(text(),'Add Admin')]")
+	private WebElement addAdmin;
 
 
 	@FindBy(xpath="//i[@class='fa fa-user']")         private WebElement icon;
 	@FindBy(xpath="//i[@class='fa fa-power-off']")    private WebElement logoutlink;
 
+	
+	
 	public CommonPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
+	
+	
 
 	/**
 	 * This method is used to click the branches
@@ -124,5 +133,26 @@ public class CommonPage extends BaseClass {
 		icon.click();
 		logoutlink.click();
 	}
-
+	
+	
+	
+//ADMIN MODULE METHODS	
+	/**
+	 * This method is used to click the admin in the common page
+	 */
+	public void clickAdmin() {
+		admin.click();
+	}
+	
+	/**
+	 * This method is used to click the addAdmin button in the common page
+	 */
+	public void clickAddAdmin() {
+		addAdmin.click();
+	}
 }
+
+
+
+
+

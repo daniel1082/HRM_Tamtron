@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.practice.FlipkartProductsPriceTests">
+      <class name="com.hrm.hrHead.AddAdmin_Test">
         <methods>
-          <include name="fetchProductWithPrice"/>
+          <include name="loginActions"/>
+          <include name="launchBrowser"/>
+          <include name="addAdminTest"/>
+          <include name="logoutActionfromApp"/>
+          <include name="closeApplcation"/>
         </methods>
-      </class> <!-- org.practice.FlipkartProductsPriceTests -->
+      </class> <!-- com.hrm.hrHead.AddAdmin_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

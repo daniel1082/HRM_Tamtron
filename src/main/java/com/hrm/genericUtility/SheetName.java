@@ -6,6 +6,6 @@ package com.hrm.genericUtility;
  */
 public enum SheetName {
 	
-	Branches,corporate,HRHeadEmployee, EMPLOYEEDETAILS, EMPLOYEECONTACT;
+	Branches,corporate,HRHeadEmployee, EMPLOYEEDETAILS, EMPLOYEECONTACT,AdminDetails;
 
 }
